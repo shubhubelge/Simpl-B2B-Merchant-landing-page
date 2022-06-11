@@ -1,0 +1,124 @@
+.warapper {
+  .form {
+    padding: 1px 0;
+    .form-space {
+      margin: 80px 0;
+    }
+  }
+
+  .form h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 48px;
+    color: #333333;
+  }
+  .form-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 880px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .col-input {
+    margin-bottom: 10px;
+    width: 46%;
+    margin: 0 2% 48px 2%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .form input, .form .col-input select {
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    padding: 10px 16px;
+    width: 100%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    outline: none;
+    height: 48px;
+    font-size: 16px;
+    font-size: 20px;
+    &::placeholder{
+      color: #888888;
+      opacity: 1;
+    }
+    &::-webkit-input-placeholder {
+      color: #888888;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      color: #888888;
+      opacity: 1;
+    }
+    &.error{
+      border-color: #E34949;
+      background-color: rgba(227, 73, 73, 0.05);
+      &::-webkit-input-placeholder{
+        color: #E34949;
+      }
+      &::placeholder{
+        color: #E34949;
+      }
+      &::placeholder{
+        color: #E34949;
+      }
+    }
+  }
+    
+  .form .col-input select {
+    -moz-appearance: none;
+    -webkit-appearance:none;
+    appearance: none;
+    background-image: url("../assets/images/select-arrow.svg");
+    background-position: 96% 50%;
+    background-repeat: no-repeat;
+    // color: #000000;
+    color: #888888;
+    option {
+      color: #000000;
+    }
+    option:first-child {
+      color: #888888;
+      background-color: transparent;
+      opacity: 1;
+    }
+    &.error{
+      color: #E34949;
+      opacity: 1;
+
+    }
+  }
+
+  .submit-btn {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 50px;
+    background: #202020;
+    padding: 14px 64px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .form-content {
+    .invalid,
+    .isempty {
+      font-size: 16px;
+      color: #e34949;
+      margin: 0;
+      margin-top: 8px;
+      display: none;
+      position: absolute;
+      left: 0;
+      top: auto;
+    }
+  }
+}
